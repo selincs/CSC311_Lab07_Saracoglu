@@ -1,3 +1,5 @@
+package org.example;
+
 // Fig. 17.13: Employee.java
 // Employee class.
 public class Employee {

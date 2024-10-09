@@ -1,3 +1,5 @@
+package org.example;
+
 // Fig. 17.9: IntStreamOperations.java
 // Demonstrating IntStream operations.
 import java.util.stream.Collectors;

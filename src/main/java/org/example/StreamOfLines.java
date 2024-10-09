@@ -1,3 +1,5 @@
+package org.example;
+
 // Fig. 17.22: StreamOfLines.java
 // Counting word occurrences in a text file.
 import java.io.IOException;

@@ -1,3 +1,5 @@
+package org.example;
+
 // Fig. 17.12: ArraysAndStreams2.java
 // Demonstrating lambdas and streams with an array of Strings.
 import java.util.Arrays;

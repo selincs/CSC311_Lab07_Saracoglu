@@ -1,4 +1,4 @@
-// Fig. 17.3: StreamReduce.java
+package org.example;// Fig. 17.3: StreamReduce.java
 // Sum the integers from 1 through 10 with IntStream.
 import java.util.stream.IntStream;
 
@@ -6,21 +6,6 @@ public class StreamReduce {
    public static void main(String[] args) {
       // sum the integers from 1 through 10
       System.out.printf("Sum of 1 through 10 is: %d%n", 
-         IntStream.rangeClosed(1, 10).sum());      
+         IntStream.rangeClosed(1, 10).reduce( (x,y)->x*y).getAsInt());
    } 
 } 
-
-/**************************************************************************
- * (C) Copyright 1992-2018 by Deitel & Associates, Inc. and               *
- * Pearson Education, Inc. All Rights Reserved.                           *
- *                                                                        *
- * DISCLAIMER: The authors and publisher of this book have used their     *
- * best efforts in preparing the book. These efforts include the          *
- * development, research, and testing of the theories and programs        *
- * to determine their effectiveness. The authors and publisher make       *
- * no warranty of any kind, expressed or implied, with regard to these    *
- * programs or to the documentation contained in these books. The authors *
- * and publisher shall not be liable in any event for incidental or       *
- * consequential damages in connection with, or arising out of, the       *
- * furnishing, performance, or use of these programs.                     *
- *************************************************************************/

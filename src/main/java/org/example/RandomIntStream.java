@@ -1,3 +1,5 @@
+package org.example;
+
 // Fig. 17.24: RandomIntStream.java
 // Rolling a die 60,000,000 times with streams
 import java.security.SecureRandom;

@@ -1,3 +1,5 @@
+package org.example;
+
 // Fig. 17.8: RandomIntegers.java
 // Shifted and scaled random integers.
 import java.security.SecureRandom; 

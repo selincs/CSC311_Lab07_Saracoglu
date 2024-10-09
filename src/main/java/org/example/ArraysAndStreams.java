@@ -1,5 +1,7 @@
+package org.example;
+
 // Fig. 17.11: ArraysAndStreams.java
-// Demonstrating lambdas and streams with an array of Integers.
+// Demonstrating lambdas and streams with an array of Integers.package org.example;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
