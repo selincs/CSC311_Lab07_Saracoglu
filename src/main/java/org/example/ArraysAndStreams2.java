@@ -12,7 +12,7 @@ public class ArraysAndStreams2 {
 
       // display original strings
       System.out.printf("Original strings: %s%n", Arrays.asList(strings));
-
+/*
       // strings in uppercase
       System.out.printf("strings in uppercase: %s%n",
          Arrays.stream(strings)             
@@ -32,21 +32,31 @@ public class ArraysAndStreams2 {
                .filter(s -> s.compareToIgnoreCase("n") < 0)
                .sorted(String.CASE_INSENSITIVE_ORDER.reversed())
                .collect(Collectors.toList()));
+*/
+
+      //Use a stream to filter strings that start with a vowel (case-insensitive).
+      // Collect and display these strings.
+      System.out.printf("%nStrings that start with a vowel, case-insensitive: %s%n",
+       Arrays.stream(strings)
+              .filter(s -> s.compareToIgnoreCase("a") == 0
+                      || s.compareToIgnoreCase("e") == 0
+                        || s.compareToIgnoreCase("i") >= 0
+                          || s.compareToIgnoreCase("o") == 0
+                            || s.compareToIgnoreCase("u") == 0
+                              || s.compareToIgnoreCase("y") == 0 )
+               .collect(Collectors.toList()));
+
+//      Use a stream to concatenate all the strings into a single string,
+//       separated by a comma, and display the result.
+      System.out.printf("%nConcatenation of all strings delimited by a ',': %s%n",
+              Arrays.stream(strings)
+                      .collect(Collectors.joining(",")));
+
+      //Use a stream to count the number of strings that contain more than
+      // 5 characters (case-insensitive) and display the count.
+      System.out.printf("%nAll strings that contain more than 5 characters case-insensitive: %d%n",
+              Arrays.stream(strings)
+              .filter(s -> s.length() > 5)
+                      .count());
    }
 } 
-
-
-/**************************************************************************
- * (C) Copyright 1992-2018 by Deitel & Associates, Inc. and               *
- * Pearson Education, Inc. All Rights Reserved.                           *
- *                                                                        *
- * DISCLAIMER: The authors and publisher of this book have used their     *
- * best efforts in preparing the book. These efforts include the          *
- * development, research, and testing of the theories and programs        *
- * to determine their effectiveness. The authors and publisher make       *
- * no warranty of any kind, expressed or implied, with regard to these    *
- * programs or to the documentation contained in these books. The authors *
- * and publisher shall not be liable in any event for incidental or       *
- * consequential damages in connection with, or arising out of, the       *
- * furnishing, performance, or use of these programs.                     *
- *************************************************************************/
